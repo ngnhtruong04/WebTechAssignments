@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W2_Ex1</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0 auto;
+        }
+
+        #khung{
+            width: 950px;
+            height: 800px;
+            background-color: white;
+            border: 1px solid black;
+        }
+
+        header{
+            width: 100%;
+            height: 150px;
+            background-color: white;
+            text-align: center;
+            line-height: 150px;
+        }
+        nav img{
+            width: 45%;
+            height: 45%;
+        }
+
+        h1{
+
+            color:brown;
+            text-transform: uppercase;
+            text-shadow: 10px 10px 6px pink;
+        }
+
+        #doc{
+            float: left;
+            width: 25%;
+            height: 550px;
+            padding-left: ;
+        }
+
+        #doc ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        #doc ul li {
+            width: 90%;
+            list-style: none;
+            background-color: pink;
+            margin-left: -30px;
+            margin-top: 10px;
+            height: 30px;
+            line-height: 30px;
+            padding-left: 10px;
+            border-radius: 20px;
+        }
+        
+        
+
+        #ngang{
+            width: 100%;
+            height: 100px;
+            background-color: pink;
+            position: relative;
+        }
+        #ngang ul li{
+            display: inline-block;
+            margin-left: 15px;
+            text-transform: uppercase;
+        }
+        #ngang ul {
+            margin-left: 150px;
+            line-height: 100px;
+        }
+        #ngang ul li a{
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            
+        }
+
+        #ngang #sea{
+            position: absolute;
+            top: 40px;
+            right: 150px;
+            height: 25px;
+        }
+
+        #ngang #go{
+            position: absolute;
+            top: 40px;
+            right: 110px;
+            height: 25px;
+        }
+
+        section h2{
+            width: 50%;
+            background-color: bisque;
+            color: Red;
+            padding-left: 10px;
+            font-size: 30px;
+            letter-spacing: 20px;
+        }
+        #starter p a,
+        #desserts p a{
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="khung">
+        <header>
+            <h1><i>Example Coffee Menu</i></h1>
+        </header>
+        <hr>
+        <nav id="ngang">
+            <ul>
+                <li><a href="#"><img src="../img/icons8-home-50.png" alt=""> |</a></li>
+                <li><a href="#">Starter |</a></li>
+                <li><a href="#">Main Courses |</a></li>
+                <li><a href="#">Desserts |</a></li>
+            </ul>
+            <input type="search" name="sea" id="sea">
+            <button type="submit" id = "go">GO</button>
+        </nav>
+        <hr>
+        <nav id="doc">
+            <ul>
+                <li><a href="#">Home 1</a></li>
+                <li><a href="#">Home 2</a></li>
+                <li><a href="#">Home 3</a></li>
+                <li><a href="#">Home 4</a></li>
+                <li><a href="#">Home 5</a></li>
+            </ul>
+        </nav>
+        <section>
+            <div id="starter">
+                <h2>Starter</h2>
+                <ul>
+                    <li>Chestnust and Mushroom Goujons</li>
+                    <li>Goat Cheese</li>
+                    <li><p style="text-transform: uppercase; color: rgb(255, 213, 0)">Honey soy chicken kebabs</p></li>
+                    <li>Seafood Salad</li>
+                </ul>
+                <p><a href="#top">Back to top</a></p>
+            </div>
+            <div id="desserts">
+                <h2>Desserts</h2>
+                <ul>
+                    <li>Lemon Sorbet</li>
+                    <li>Chocolate Mud Pie</li>
+                    <li>Pecan Pie</li>
+                    <li>Selection of fine Cheese from Around the World</li>
+                </ul>
+                <p><a href="#top">Back to top</a></p>
+            </div>
+
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0 ;
+            padding: 0;
+        }
+        #khung{
+            width: 700px;
+            height: 500px;
+            border: 1px solid blue;
+            margin: 0 auto;
+        }
+        header{
+            width: 100%;
+            height: 100px;
+            text-align: left;
+            padding: 5px;
+        }
+        section{
+            padding: 0 5px;
+            width:100%;
+            height: 400px;
+            text-align: left;
+        }
+        
+        #nd1{
+            padding-left: 5px;
+            border: 1px solid black;
+        }
+        #nd1 table{
+            border-collapse: collapse;
+        }
+        #nd1 td,tr{
+            padding: 5px;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="khung">
+        <header>
+            <h1>Contact us</h1>
+        </header>
+
+        <section>
+            <fieldset id="nd1">
+                <legend>Your message:</legend>
+                <form action="">
+                    <table>
+                    <tr>
+                        <td>
+                            <label for="">To</label>
+                        </td>
+                        <td>
+                            <input type="text" name="" id="" placeholder="Example Cafe"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Your email</label>
+                        </td>
+                        <td>
+                            <input type="text" name="" value="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Message </label>
+                        </td>
+                        <td>
+                            <textarea name="" id="" rows="7" cols="50"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Attach File</label>
+                        </td>
+                        <td>
+                            <input type="file" name="" id="fileupload">
+                        </td>
+                    </tr>
+                </table>
+                </form>
+            </fieldset>
+            <fieldset id="nd2">
+                <legend>How you found us</legend>
+                <form action="">
+                    <table>
+                        <tr>
+                            <td><label for="">How did you hear of us</label></td>
+                            <td>
+                                <select name="" id="">
+                                    <option value="Google">Google</option>
+                                    <option value="Facebook">Facebook</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="">
+                                    Newsletter
+                                </label>
+                            </td>
+                            
+                            <td>
+                                <input type="checkbox" name="" id="" checked>
+                                <label for="">Ensure this box is checkef if you would like to receive email updates</label>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </fieldset>
+            <input type="button" value="Send message" style="width: 100px;">
+        </section>
+        
+    </div>
+</body>
+</html>
