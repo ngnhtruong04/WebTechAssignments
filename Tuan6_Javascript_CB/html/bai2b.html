@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Máy tính cơ bản</title>
+</head>
+<body>
+  <h2>PHÉP TÍNH CƠ BẢN</h2>
+  Nhập số thứ 1: <input type="text" id="so1"><br><br>
+  Nhập số thứ 2: <input type="text" id="so2"><br><br>
+
+  <button onclick="tinh('+')">Cộng</button>
+  <button onclick="tinh('-')">Trừ</button>
+  <button onclick="tinh('*')">Nhân</button>
+  <button onclick="tinh('/')">Chia</button>
+  <button onclick="tinh('%')">Chia dư</button>
+  <br><br>
+
+  Kết quả: <input type="text" id="ketqua" readonly>
+
+<script>
+function tinh(phep) {
+  var a = parseFloat(document.getElementById("so1").value);
+  var b = parseFloat(document.getElementById("so2").value);
+
+  if (isNaN(a) || isNaN(b)) {
+    alert("Vui lòng nhập số hợp lệ!");
+    return;
+  }
+
+  var kq;
+  switch(phep) {
+    case '+': kq = a + b; break;
+    case '-': kq = a - b; break;
+    case '*': kq = a * b; break;
+    case '/': 
+      if (b==0) { alert("Không thể chia cho 0!"); return; }
+      kq = a / b; break;
+    case '%': kq = a % b; break;
+  }
+  document.getElementById("ketqua").value = kq;
+}
+</script>
+</body>
+</html>

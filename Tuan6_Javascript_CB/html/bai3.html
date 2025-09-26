@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đổi hình ngẫu nhiên</title>
+</head>
+<body>
+  <h2>Đổi hình ngẫu nhiên</h2>
+  <img id="hinh" src="../img/b1.jpg" width="300"><br><br>
+  <button onclick="play()">Play</button>
+  <button onclick="stop()">Stop</button>
+
+<script>
+var arr = ["../img/b1.jpg","../img/b2.jpg","../img/b3.jpg","../img/b4.jpg","../img/b5.jpg",
+           "../img/b6.jpg","../img/b7.jpg","../img/b8.jpg","../img/b9.jpg","../img/b10.jpg"];
+var timer;
+
+function play() {
+  timer = setInterval(function() {
+    var index = Math.floor(Math.random()*arr.length);
+    document.getElementById("hinh").src = arr[index];
+  }, 1000); // đổi hình mỗi giây
+}
+
+function stop() {
+  clearInterval(timer);
+}
+</script>
+</body>
+</html>

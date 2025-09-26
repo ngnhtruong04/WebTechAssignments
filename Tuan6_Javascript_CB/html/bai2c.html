@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chọn cafe</title>
+</head>
+<body>
+  <h3>Chọn loại café:</h3>
+  <form>
+    <input type="checkbox" name="cf" value="Trung Nguyen"> Trung Nguyen<br>
+    <input type="checkbox" name="cf" value="Kong"> Kong<br>
+    <input type="checkbox" name="cf" value="Vina"> Vina<br>
+    <input type="checkbox" name="cf" value="Ocean Blue"> Ocean Blue<br>
+    <input type="checkbox" name="cf" value="MeKong"> MeKong<br>
+    <input type="checkbox" name="cf" value="Blue Ocean"> Blue Ocean<br><br>
+    <input type="button" value="Chọn" onclick="chonCF()">
+  </form>
+  <p id="ketqua"></p>
+
+<script>
+function chonCF() {
+  var checkboxes = document.getElementsByName("cf");
+  var ketqua = "Bạn chọn: ";
+  for (var i=0; i<checkboxes.length; i++) {
+    if (checkboxes[i].checked) {
+      ketqua += checkboxes[i].value + ", ";
+    }
+  }
+  document.getElementById("ketqua").innerHTML = ketqua;
+}
+</script>
+</body>
+</html>

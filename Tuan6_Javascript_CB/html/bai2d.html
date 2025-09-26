@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Form định dạng</title>
+</head>
+<body>
+  <h2>FORM ĐỊNH DẠNG</h2>
+  Họ và tên: <input type="text" id="hoten"><br><br>
+  Chọn: 
+  <input type="radio" name="chon" value="bg"> Background
+  <input type="radio" name="chon" value="font"> Font
+  <br><br>
+  Chọn màu:
+  <select id="mau">
+    <option value="red">Đỏ</option>
+    <option value="blue">Xanh</option>
+    <option value="green">Xanh lá</option>
+    <option value="yellow">Vàng</option>
+  </select>
+  <button onclick="doiMau()">Đổi màu</button>
+  <button onclick="location.reload()">Cancel</button>
+
+  <p id="text">Đây là đoạn văn bản để thử đổi màu.</p>
+
+<script>
+function doiMau() {
+  var chon = document.querySelector('input[name="chon"]:checked');
+  var mau = document.getElementById("mau").value;
+  if (!chon) {
+    alert("Vui lòng chọn kiểu đổi màu!");
+    return;
+  }
+  if (chon.value=="bg") {
+    document.getElementById("text").style.backgroundColor = mau;
+  } else {
+    document.getElementById("text").style.color = mau;
+  }
+}
+</script>
+</body>
+</html>
